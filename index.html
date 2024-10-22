@@ -2,10 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-    <title>Redirecting...</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 90's Website</title>
+    <style>
+        body {
+            background-color: #ccccff;
+            color: #000000;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        h1, h2 {
+            color: #ff0000;
+            text-align: center;
+        }
+
+        marquee {
+            width: 100%;
+            color: #0000ff;
+        }
+
+        .nav {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            font-weight: bold;
+            color: #000000;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .content {
+            width: 70%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            padding: 20px;
+        }
+
+        .blink {
+            font-weight: bold;
+            color: #ff0000;
+            animation: blink-animation 1s steps(2, start) infinite;
+            -webkit-animation: blink-animation 1s steps(2, start) infinite;
+        }
+
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        .footer {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click here</a>.</p>
+    <marquee>Welcome to My Awesome 90's Website!</marquee>
+
+    <h1>Welcome to My Retro Webpage!</h1>
+    <h2>It's like the 90s all over again!</h2>
+
+    <div class="nav">
+        <a href="#home">Home</a> | 
+        <a href="#about">About Me</a> | 
+        <a href="#gallery">Gallery</a> | 
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="content">
+        <h2>About Me</h2>
+        <p>Hello there! Welcome to my totally awesome website, made in true 90's style. The web was simple back then, and so is this site. Enjoy the <span class="blink">blinking text!</span></p>
+
+        <h2>Gallery</h2>
+        <p>Check out my rad images below!</p>
+        <img src="https://placekitten.com/200/300" alt="Kitten" width="200" height="300">
+        <img src="https://placekitten.com/250/300" alt="Kitten" width="250" height="300">
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 My 90's Website - All Rights Reserved</p>
+    </div>
 </body>
 </html>
